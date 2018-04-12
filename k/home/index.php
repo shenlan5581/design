@@ -496,12 +496,12 @@ include $root."App/upload.php";
                                         <a href="#" class="scrollDown"></a>
                                     </div>
                                     <div class="scroll v2">
-                                        <p class="color2"> <?php $img->get_descript("us_011") ?> </p>
-                                        <p> <?php $img->get_descript("us_021") ?>                </p>
-                                        <p class="pad5"> <?php $img->get_descript("us_021") ?>   </p>
+                                        <p class="color2">   </p>
+                                        <p>          </p>
+                                        <p class="pad5"> <?php $img->get_big("contact") ?>   </p>
                                     </div>
                                     <div class="hr"></div>
-                                    <h2>我们的团队</h2>
+                                    <h2>我们的公司</h2>
                                     <p><?php $img->get_descript("us_031") ?> </p>
                                 </div>
                             </div>
@@ -562,8 +562,8 @@ include $root."App/upload.php";
                                     <div>
                                          我们的地址: 
                                         <p><span class="color2"> <?php $img->get_path("contact")?> <br /> </span><br />
-    <span class="w1">Mobile:</span> <?php $img->get_title("contact")?> <br /> 
-    <span class="w2">FAX:</span><?php $img->get_descript("fax")?><br />E-mail: <a href="#" class="color2 und"><?php $img->get_big("contact")?></a></p>
+    <span class="w1">Mobile:</span> <?php $img->get_descript("contact")?> <br /> 
+    <span class="w2">FAX</span><br />E-mail: <a href="#" class="color2 und"><?php $img->get_title("contact")?></a></p>
                                     </div>
                                 </div>
                             </div>

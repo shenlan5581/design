@@ -83,7 +83,7 @@ class info_home extends upload{
                      title =' $title',
                      big_img =' $b_p '
                      where info_name = '$img_numb'"; //sql
-  echo $sql ;  
+ // echo $sql ;  
           // save images;
           $sp =$img_path."home_0".$number.".jpg";             // small img path
           $bp=$img_path."home_big_0".$number.".jpg";       // small img path
@@ -228,7 +228,7 @@ class info_aboutus extends upload{
       global  $db_table_name;
       $number = $this-> check_input($_POST["number"]);           //number
       $img_numb ='us'.'_0'.$number;                                   //info_name
-      $p_p =$img_url."tem_0".$number.".jpg";             // small img path
+      $p_p =$img_url."us_0".$number.".jpg";             // small img path
       $title = $this->check_input($_POST["title"]);                      //title
       $desc =$this->check_input($_POST["desc"]);                     //desc
       $sql = "update $db_table_name set  file_name = '$p_p',    

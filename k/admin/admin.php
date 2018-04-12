@@ -86,10 +86,10 @@
  </form>
  <form id="form5" action="#" method = "POST" enctype="multipart/form-data"   >
    Position(位置)：       <input id="status1" class="border03"  type="text" name="position" value="aboutus"></input> 
-   Number(编号)：(1~12）      <input id="home_img"class="border03"  type="text" name="number"></input> 
+   Number(编号)：(1）      <input id="home_img"class="border03"  type="text" name="number"></input> 
    Photo(照片)：请确保图片尺寸正确(260*176)         <input id="file2" class="border03" type="file" name="pic"></input>
-   Name(名称)：            <textarea  class="border03" type="text" name="title"></textarea>
-   Job Position(职位)：<textarea class="border03" type="text" name="desc"></textarea>
+   标题(名称)：            <textarea  class="border03" type="text" name="title"></textarea>
+   简介：<textarea class="border03" type="text" name="desc"></textarea>
    <button type ="submit" class ="border03">commit</button> 
  </form>
  <form id="form6"  action="#" method = "POST" enctype="multipart/form-data" >
@@ -97,10 +97,12 @@
    Addresss(地址)：       <textarea id="status1" class="border03"  type="text" name="address"></textarea> 
    Telephone(电话)：           <textarea  class="border03" type="email" name="telephone"></textarea>
    Eail(邮箱)：<textarea  class="border03" type="email" name="email"></textarea>
-   Website(网站)：<textarea  class="border03" type="email" name="website"></textarea>
+   公司简介：<textarea  class="border03" type="email" name="website"></textarea>
    <button type ="submit" class ="border03">commit</button> 
   </form>
  
+
+
 </body>
 <script src="./js/jquery-1.6.1.min.js"></script>
 <script src="./js/admin.js"></script>
