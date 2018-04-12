@@ -1,0 +1,81 @@
+#!/bin/bash
+mysql -hlocalhost -uroot -pxingke  <<EOF 
+    use design;
+    create table if not exists yu (
+    id int unsigned not null primary key auto_increment,
+    info_name char(30) not null,
+    file_name char(100) not null,
+    descriptor char(200) not null,
+    title char(50) not null,
+    big_img char(100) not null,
+    w_id int unsigned not null,
+    c_id int unsigned not null
+    );
+    alter table yu  convert to character set utf8; 
+
+ 
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_01','./images/home/home_01.jpg','说明','标题','./images/home/home_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_02','./images/home/home_02.jpg','说明','标题','./images/home/home_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_03','./images/home/home_03.jpg','说明','标题','./images/home/home_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_04','./images/home/home_04.jpg','说明','标题','./images/home/home_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_05','./images/home/home_05.jpg','说明','标题','./images/home/home_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_06','./images/home/home_06.jpg','说明','标题','./images/home/home_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_07','./images/home/home_07.jpg','说明','标题','./images/home/home_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('home_08','./images/home/home_08.jpg','说明','标题','./images/home/home_08_big.jpg',1,1);
+
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_01','./images/design/design_01.jpg','说明','标题','./images/design/design_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_02','./images/design/design_02.jpg','说明','标题','./images/design/design_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_03','./images/design/design_03.jpg','说明','标题','./images/design/design_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_04','./images/design/design_04.jpg','说明','标题','./images/design/design_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_05','./images/design/design_05.jpg','说明','标题','./images/design/design_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_06','./images/design/design_06.jpg','说明','标题','./images/design/design_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_07','./images/design/design_07.jpg','说明','标题','./images/design/design_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('design_08','./images/design/design_08.jpg','说明','标题','./images/design/design_08_big.jpg',1,1);
+    
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_01','./images/model/model_01.jpg','  ',' ','./images/model/model_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_02','./images/model/model_02.jpg','  ',' ','./images/model/model_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_03','./images/model/model_03.jpg','  ',' ','./images/model/model_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_04','./images/model/model_04.jpg','  ',' ','./images/model/model_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_05','./images/model/model_05.jpg','  ',' ','./images/model/model_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_06','./images/model/model_06.jpg','  ',' ','./images/model/model_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_07','./images/model/model_07.jpg','  ',' ','./images/model/model_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_08','./images/model/model_07.jpg','  ',' ','./images/model/model_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_09','./images/model/model_01.jpg','  ',' ','./images/model/model_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_010','./images/model/model_02.jpg','  ',' ','./images/model/model_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_011','./images/model/model_03.jpg','  ',' ','./images/model/model_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_012','./images/model/model_04.jpg','  ',' ','./images/model/model_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_013','./images/model/model_05.jpg','  ',' ','./images/model/model_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_014','./images/model/model_06.jpg','  ',' ','./images/model/model_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_015','./images/model/model_07.jpg','  ',' ','./images/model/model_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('model_016','./images/model/model_07.jpg','  ',' ','./images/model/model_07_big.jpg',1,1);
+
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_01','./images/tem/tem_01.jpg',' ',' ','./images/tem/tem_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_02','./images/tem/tem_02.jpg',' ',' ','./images/tem/tem_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_03','./images/tem/tem_03.jpg',' ',' ','./images/tem/tem_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_04','./images/tem/tem_04.jpg',' ',' ','./images/tem/tem_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_05','./images/tem/tem_05.jpg',' ',' ','./images/tem/tem_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_06','./images/tem/tem_06.jpg',' ',' ','./images/tem/tem_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_07','./images/tem/tem_07.jpg',' ',' ','./images/tem/tem_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_08','./images/tem/tem_07.jpg',' ',' ','./images/tem/tem_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_09','./images/tem/tem_01.jpg',' ',' ','./images/tem/tem_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_010','./images/tem/tem_02.jpg',' ',' ','./images/tem/tem_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_011','./images/tem/tem_03.jpg',' ',' ','./images/tem/tem_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_012','./images/tem/tem_04.jpg',' ',' ','./images/tem/tem_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_013','./images/tem/tem_05.jpg',' ',' ','./images/tem/tem_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_014','./images/tem/tem_06.jpg',' ',' ','./images/tem/tem_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_015','./images/tem/tem_07.jpg',' ',' ','./images/tem/tem_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('tem_016','./images/tem/tem_07.jpg',' ',' ','./images/tem/tem_07_big.jpg',1,1);
+
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_01','./images/us/us_01.jpg',' ',' ','./images/us/us_01_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_02','./images/us/us_02.jpg',' ',' ','./images/us/us_02_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_03','./images/us/us_03.jpg',' ',' ','./images/us/us_03_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_04','./images/us/us_04.jpg',' ',' ','./images/us/us_04_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_05','./images/us/us_05.jpg',' ',' ','./images/us/us_05_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_06','./images/us/us_06.jpg',' ',' ','./images/us/us_06_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_07','./images/us/us_07.jpg',' ',' ','./images/us/us_07_big.jpg',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('us_08','./images/us/us_07.jpg',' ',' ','./images/us/us_07_big.jpg',1,1);
+
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('contact','addr','tel','email ','C_desc',1,1);
+    insert into yu (info_name,file_name,descriptor,title,big_img,w_id,c_id)  values ('admin','home','design','model','team',1,1);
+   
+ 

@@ -1,0 +1,170 @@
+
+/*****/
+
+
+.img_hide{
+    position: relative;
+    opacity:0 ;
+    animation:img_hide 1s;
+    -moz-animation:img_hide 1s; /* Firefox */
+     animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes img_hide
+{
+    0%      {  opacity:1 ;top :0px;}
+    100%  {   opacity:0 ;top :-150px;}
+}
+@-moz-keyframes  img_hide /* Firefox */
+{  
+    0%      {  opacity:1 ;top :0px;}
+    100%  {   opacity:0 ;top :-50px;}
+}
+/*return*/
+.img_show{
+   /* position: relative;*/
+    opacity:1 ;
+    animation:img_show 1s;
+    -moz-animation:img_show 1s; /* Firefox */
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes img_show
+{
+    100%  {  opacity:1 ;top :0px;}
+    0%     {   opacity:0 ;top :-150px;}
+}
+@-moz-keyframes img_show /* Firefox */
+{  
+    100%      {  opacity:1 ;top :0px;}
+    0%  {   opacity:0 ;top :-50px;}
+}
+.img_big_show{
+    animation: a2 1s;
+    -moz-animation:a2 1s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes a2
+{
+    0%      {  opacity:0 ;top :150px; }
+    100%  {   opacity:1 ;top :-5px;z-index: 2;  }
+}
+@-moz-keyframes a2 /* Firefox */
+{  
+    0%      {  opacity:0;top :150px; }
+    100%  {   opacity:1;top :-5px;z-index:2; }
+}
+.img_big_hide{
+    animation:img_big_hide 1s;
+    -moz-animation:img_big_hide 1s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes img_big_hide
+{
+    0%  {   opacity:1 ;top :-5px;     }
+    100%      {  opacity:0 ;top :150px; }
+}
+@-moz-keyframes img_big_hide /* Firefox */
+{  
+    0%  {   opacity:1;top :-5px; }
+    100%      {  opacity:0;top :150px; }
+}
+
+
+
+/*form*/
+.form_hide{
+    animation:form_hide 1s;
+    -moz-animation:form_hide  1s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes form_hide
+{
+    0%  {   opacity:1 ;left :0px;     }
+    100%      {  opacity:0 ;left:-250px; }
+}
+@-moz-keyframes form_hide /* Firefox */
+{  
+    0%  {   opacity:1 ;left :0px;     }
+    100%      {  opacity:0 ;left:-250px; }
+}
+
+
+
+.form_show{
+    animation:form_show 1s;
+    -moz-animation:form_show  1s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes form_show
+{
+    100%  {   opacity:1 ;left :0px;     }
+        0%      {  opacity:0 ;left:250px; }
+}
+@-moz-keyframes form_show /* Firefox */
+{  
+   100%  {   opacity:1;left:0px; }
+    0%      {  opacity:0;left :250px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********test******/
+.t1{
+    animation:t1 1s;
+    -moz-animation:t1 1s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes t1
+{
+    0%  {   opacity:1 ;top :-5px;     }
+    100%      {  opacity:0 ;top :150px; }
+}
+@-moz-keyframes img_big_hide /* Firefox */
+{  
+    0%  {   opacity:1;top :-5px; }
+    100%      {  opacity:0;top :150px; }
+}
+.t2img_big_hide{
+    animation:t21s;
+    -moz-animation:t21s; /* Firefox */ 
+    animation-fill-mode:forwards;  /*保持最后状态“*/
+    -moz-animation-fill-mode:forwards;
+}
+@keyframes t2
+{
+    0%  {   opacity:1 ;top :-5px;     }
+    100%      {  opacity:0 ;top :150px; }
+}
+@-moz-keyframes img_big_hide /* Firefox */
+{  
+    0%  {   opacity:1;top :-5px; }
+    100%      {  opacity:0;top :150px; }
+}
+
+
