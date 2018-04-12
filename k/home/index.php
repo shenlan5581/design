@@ -1,7 +1,7 @@
 <?php
 include '../App/config.php';
-include "$home/App/home.php"; 
-include "$home/App/upload.php"; 
+include $root."App/home.php"; 
+include $root."App/upload.php"; 
 ?>
 <!DOCTYPE HTML>
 <html lang="en">

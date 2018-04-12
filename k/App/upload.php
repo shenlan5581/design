@@ -1,7 +1,13 @@
 <?php 
-include 'config.php';
 include 'db.php';
+include 'config.php';
 
+$img_path=$root."home/images/";
+$img_url= "./images/";  // 相对路径 记录的是主页的图片文件夹路径
+
+
+
+  //home界面图的 url文件路径  
 class upload {
  private $handler;  //  obj of the handler
  public $ret_status;   
@@ -77,7 +83,7 @@ class info_home extends upload{
                      title =' $title',
                      big_img =' $b_p '
                      where info_name = '$img_numb'"; //sql
-     
+  echo $sql ;  
           // save images;
           $sp =$img_path."home_0".$number.".jpg";             // small img path
           $bp=$img_path."home_big_0".$number.".jpg";       // small img path

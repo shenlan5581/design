@@ -1,9 +1,10 @@
+<?php include '../App/upload.php' ?>
+
 
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <?php include '../App/upload.php' ?>
     <link href="./css/admin.css" rel="stylesheet" />
     <link href="./css/animation.css" rel="stylesheet" />
 	<title>后台管理</title>
